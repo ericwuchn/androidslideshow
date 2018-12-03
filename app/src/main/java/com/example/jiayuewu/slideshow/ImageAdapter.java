@@ -10,10 +10,11 @@ import android.widget.ImageView;
 public class ImageAdapter extends PagerAdapter {
 
     private Context mContext;
-    private int[] mImageIds = new int[] {R.drawable.brown_icon, R.drawable.brownchips, R.drawable.cat};
+    private int[] mImageIds;
 
-    ImageAdapter(Context context) {
+    ImageAdapter(Context context, int[] ImageIds) {
         mContext = context;
+        mImageIds = ImageIds;
     }
 
     @Override
